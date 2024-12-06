@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="icon" href="calculadora.png" />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <div class="pantallaP" id="pantallaP"></div>
+      <div class="pantallaS" id="pantallaS"></div>
+      <button class="operador" onclick="LimpiarT()">AC</button>
+      <button class="operador" onclick="limpiarU()">C</button>
+      <button class="operador" onclick="Mostrar('%')">%</button>
+      <button class="operador" onclick="Mostrar('/')">/</button>
+
+      <button onclick="Mostrar('7')">7</button>
+      <button onclick="Mostrar('8')">8</button>
+      <button onclick="Mostrar('9')">9</button>
+      <button class="operador" onclick="Mostrar('x')">*</button>
+
+      <button onclick="Mostrar('4')">4</button>
+      <button onclick="Mostrar('5')">5</button>
+      <button onclick="Mostrar('6')">6</button>
+      <button class="operador" onclick="Mostrar('-')">-</button>
+
+      <button onclick="Mostrar('1')">1</button>
+      <button onclick="Mostrar('2')">2</button>
+      <button onclick="Mostrar('3')">3</button>
+      <button class="operador" onclick="Mostrar('+')">+</button>
+
+      <button class="cero" onclick="Mostrar('0')">0</button>
+      <button onclick="Mostrar('.')">.</button>
+      <button class="igual" onclick="Calcular()">=</button>
+    </div>
+    <script src="funcion.js"></script>
+  </body>
+</html>
